@@ -21,7 +21,15 @@ body {
 }
 
 
+nav {
+  display: flex;
+  flex-direction: row;
 
+}
+
+nav ul li {
+list-style: none;
+}
 
 
 .black {color: #000000;
