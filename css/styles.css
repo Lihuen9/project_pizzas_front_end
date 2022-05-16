@@ -63,3 +63,16 @@ nav ul li a:hover {
 .red {
   color: #ff0000;
 }
+
+
+.main-content h2{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: #000000;
+  font-family: 'Oswald', sans-serif;
+    
+}
+
+
