@@ -1,5 +1,8 @@
+
+
+
 body {
-  background-color: #fff;
+  background-color: rgba(230, 238, 188, 0.674);
 }
 
 #header-container {
@@ -36,12 +39,12 @@ nav ul li a {
   text-decoration: none;
   padding: 15px;
   border-style: double;
-  border-color: bisque;
+  border-color: rgb(236, 194, 143);
 
 }
 
 nav ul li a:hover {
-  background-color: #E50C39;
+  background-color: #d54e69;
   color: #ffffff;
 
 }
