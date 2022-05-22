@@ -2,4 +2,4 @@
 
 Proyecto de trabajo práctico y de estudio.
 
- ! [Primera versión del proyecto de estudio.](/pizze-v1.jpg) {width='100px'} 
+ ![Primera versión del proyecto de estudio.](/pizze-v1.jpg){width='100px'} 
