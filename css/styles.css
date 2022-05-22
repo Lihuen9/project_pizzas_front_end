@@ -1,8 +1,11 @@
 
-
+* {
+  margin: 3px;
+  }
 
 body {
-  background-color: rgba(230, 238, 188, 0.674);
+  background-color: #F7D23C;
+  
 }
 
 #header-container {
@@ -14,11 +17,64 @@ body {
 }
 
 #header-container h1 {
-  font-family: "Kalam", cursive;
-  font-size: 32px;
+  font-family: 'Luckiest Guy', sans-serif;
+  /* font-family: 'Paytone One', sans-serif; */
+  /* font-family: "Kalam", cursive; */
+  font-size: 38px;
+  letter-spacing: 3px;
   font-style: italic;
   font-weight: bold;
+  text-shadow: 3px 3px 5px #f1ecdf;
+
+  width: 25%;
+      padding: 0.25em 0.25em;
+      border-radius: 3px;
+      background-color: #F5F4AD;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  /* 
+  background: rgb(209, 143, 57);
+  */
+
 }
+
+.main-content h2{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #000000;
+  font-family: 'Oswald', sans-serif;
+    
+}
+
+
+
+.main-content ul {
+  list-style: none;
+ 
+}
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space;
+  align-items: center;
+  
+  }
+
+ 
+
+  .box figure figcaption {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+   
+  }
+
+  
 
 nav {
   
@@ -30,6 +86,8 @@ nav ul li {
   font-family: 'Oswald', sans-serif;
   list-style: none;
   display: inline;
+  font-weight: bold;
+ 
 
 }
 
@@ -39,7 +97,7 @@ nav ul li a {
   text-decoration: none;
   padding: 15px;
   border-style: double;
-  border-color: rgb(236, 194, 143);
+  border-color: #ecc28f;
 
 }
 
@@ -65,14 +123,6 @@ nav ul li a:hover {
 }
 
 
-.main-content h2{
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  letter-spacing: 10px;
-  color: #000000;
-  font-family: 'Oswald', sans-serif;
-    
-}
+
 
 
