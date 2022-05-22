@@ -18,24 +18,13 @@ body {
 
 #header-container h1 {
   font-family: 'Luckiest Guy', sans-serif;
-  /* font-family: 'Paytone One', sans-serif; */
-  /* font-family: "Kalam", cursive; */
   font-size: 38px;
   letter-spacing: 3px;
   font-style: italic;
   font-weight: bold;
   text-shadow: 3px 3px 5px #f1ecdf;
-
-  width: 25%;
-      padding: 0.25em 0.25em;
-      border-radius: 3px;
-      background-color: #F5F4AD;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #F5F4AD;
   
-  /* 
-  background: rgb(209, 143, 57);
-  */
-
 }
 
 .main-content h2{
