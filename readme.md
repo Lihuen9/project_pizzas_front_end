@@ -1,3 +1,5 @@
 # Primer proyecto curso CFP-401 - SM
 
 Proyecto de trabajo práctico y de estudio.
+
+ ! [Primera versión del proyecto de estudio.](/pizze-v1.jpg) {width='100px'} 
