@@ -27,6 +27,20 @@ body {
   
 }
 
+.black {
+  color: #000000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.red {
+  color: #ff0000;
+}
+
+
+
 .main-content h2{
   display: flex;
   justify-content: center;
@@ -98,18 +112,14 @@ nav ul li a:hover {
 
 
 
+.footer-content {
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 16px;
+  font-style: oblique;
+  background-color: #f3e498;
 
-.black {
-  color: #000000;
 }
 
-.green {
-  color: #00ff00;
-}
-
-.red {
-  color: #ff0000;
-}
 
 
 
