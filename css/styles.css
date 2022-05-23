@@ -49,6 +49,7 @@ body {
   letter-spacing: 10px;
   color: #000000;
   font-family: 'Oswald', sans-serif;
+  padding: 20px;
     
 }
 
@@ -118,6 +119,7 @@ nav ul li a:hover {
   font-style: oblique;
   text-align: center;
   background-color: #f3e498;
+  padding: 10px;
 
 }
 
