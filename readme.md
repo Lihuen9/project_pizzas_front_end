@@ -7,4 +7,4 @@ Proyecto de trabajo práctico y de estudio.
 
 
  > 2022-05-22 Mejoras
- ![Primera versión del proyecto de estudio.](/img/pizze-v2.jpg "Vista primera versión")
+ ![Primera versión del proyecto de estudio.](/img/pizze-v2.jpg "Vista con mejoras")
