@@ -9,6 +9,13 @@ body {
    justify-content: space-between;
    align-items: center;
    margin-top: 0;
+   background: url(/img/header.jpg) no-repeat center;
+   background-size:cover;
+	
+}
+
+#header-container img {
+   position: ;
 }
 
 #header-container h1 {
@@ -39,12 +46,20 @@ nav {
    font-family: "oswald", sans-serif ;
    display: flex;
    flex-direction: row;
+
+   position: sticky;
+   top: 0;
+   
 }
+
+
+
 
 nav ul li {
    /* font-family: "Oswald", sans-serif; */
    list-style: none;
    display: inline;
+   
 
 }
 
@@ -55,6 +70,7 @@ nav ul li a {
    padding: 13px;
    border-style: double;
    border-color: #ecc28f;
+  
 
 }
 
