@@ -3,16 +3,21 @@ body {
    ;
 }
 
+header {
+   background: url(/img/header.jpg) no-repeat fixed center;
+   background-size:cover;
+	
+}
+
 #header-container {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
    margin-top: 0;
-   background: url(/img/header.jpg) no-repeat center;
-   background-size:cover;
-	
 }
+
+
 
 #header-container img {
    position: ;
