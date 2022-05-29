@@ -3,12 +3,6 @@ body {
    ;
 }
 
-header {
-   background: url(/img/header.jpg) no-repeat fixed center;
-   background-size:cover;
-	
-}
-
 #header-container {
    display: flex;
    flex-direction: row;
@@ -16,9 +10,6 @@ header {
    align-items: center;
    
 }
-
-
-
 
 
 #header-container h1 {
@@ -29,6 +20,7 @@ header {
    font-style: italic;
    font-weight: bold;
    letter-spacing: 3px;
+   text-shadow: #555 2px 2px 3px;
    
    
 }
@@ -50,8 +42,7 @@ nav {
    display: flex;
    flex-direction: row;
 
-   position: sticky;
-   top: 0;
+   
    
 }
 
