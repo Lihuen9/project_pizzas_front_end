@@ -1,6 +1,7 @@
 body {
    background-color: #f7d23c;
-   ;
+   font-size: 16px;
+   
 }
 
 #header-container {
@@ -16,7 +17,7 @@ body {
    /* font-family: 'Lobster', cursive; */
    /* font-family: "Kalam", cursive; */
    font-family: 'Paytone One', sans-serif;
-   font-size: 55px;
+   font-size: 2.5rem;
    font-style: italic;
    font-weight: bold;
    letter-spacing: 3px;
@@ -58,7 +59,7 @@ nav ul li {
 }
 
 nav ul li a {
-   font-size: 15px;
+   font-size: 1rem;
    color: #333333;
    text-decoration: none;
    padding: 13px;
@@ -81,7 +82,7 @@ nav ul li a:hover {
 .main-content h2 {
    display: flex;
    justify-content: center;
-   font-size: 40px;
+   font-size: 2.5rem;
    letter-spacing: 10px;
    color: #000000;
    font-family: 'Oswald', sans-serif;
@@ -115,6 +116,7 @@ nav ul li a:hover {
    /*imagenes responsivas */
    max-width: 100%;
    /*imagenes responsivas */
+   height: auto;
    margin-bottom: 6px;
    justify-content: center;
    
@@ -128,7 +130,7 @@ nav ul li a:hover {
 .gallery li h3 {
    margin-bottom: 6px;
    text-align: center;
-   font-size: 18px;
+   font-size: 1.125rem;
    font-weight: bold;
    line-height: 100%;
    text-transform: uppercase;
@@ -138,19 +140,19 @@ nav ul li a:hover {
 
 .gallery li p {
    text-align: center;
-   font-size: 32px;
+   font-size: 2rem;
    font-weight: bold;
    color: #187d81
 }
 
 .gallery li p sup {
-   font-size: 12px;
+   font-size: 0.75rem;
 }
 
 .gallery li time {
    display: flex;
    justify-content: center;
-   font-size: 16px;
+   font-size: 1rem;
    font-weight: bold;
    color: #1a5b5e;
 }
@@ -158,9 +160,39 @@ nav ul li a:hover {
 footer {
    display: flex;
    justify-content: center;
-   font-size: 20px;
+   font-size: 1.5rem;
    color: black;
    font-family: 'Oswald', sans-serif;
    font-weight: bold;
 }
+
+@media (max-width: 960px) {
+   #header-container {
+      flex-direction: column;
+   }
+   /* #header-container h1 {
+      display: none; 
+   } */
+
+   .gallery {
+      flex-direction: column;
+      margin-top: 60px;
+   }
+
+   .gallery li {
+      width: 100%;
+      justify-content: center;
+   }
+}
+
+
+
+
+/* @media (min-width: 961px) and (max-width:1200px) {
+   
+} */
+
+/* @media (min-width: 1201px) and (max-width:1600px) {
+   
+} */
 
