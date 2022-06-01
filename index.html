@@ -27,7 +27,7 @@
    <!-- Font gallery -->
    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
 
-
+   <link rel="stylesheet" href="css/all.css" />
    <link rel="stylesheet" href="css/styles.css" />
    
 </head>
@@ -69,6 +69,11 @@
                      <time>16/05/2022</time>
                   </figcaption>
                </figure>
+               <button class="button" value="1">
+                  Añadir al carrito 
+                     <span class="fa-solid fa-cart-shopping"></span>
+
+               </button>
             </div>
          </li>
 
@@ -85,6 +90,10 @@
                      <time>16/05/2022</time>
                   </figcaption>
                </figure>
+               <button class="button" value="2">
+                  Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+
+               </button>
             </div>
          </li>
 
@@ -101,6 +110,10 @@
                      <time>16/05/2022</time>
                   </figcaption>
                </figure>
+               <button class="button" value="9">
+                  Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+
+               </button>
             </div>
          </li>
 
@@ -117,6 +130,10 @@
                      <time>16/05/2022</time>
                   </figcaption>
                </figure>
+               <button class="button" value="4">
+                  Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+
+               </button>
             </div>
          </li>
 
@@ -133,6 +150,10 @@
                      <time>16/05/2022</time>
                   </figcaption>
                </figure>
+               <button class="button" value="5">
+                  Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+
+               </button>
             </div>
          </li>
 
@@ -149,6 +170,10 @@
                      <time>16/05/2022</time>
                   </figcaption>
                </figure>
+               <button class="button" value="6">
+                  Añadir al carrito <span class="fa-solid fa-cart-shopping"></span>
+
+               </button>
             </div>
          </li>
       </ul>
@@ -159,6 +184,23 @@
         Footer &copy;
      </h4> 
    </footer>
+
+<script>
+   /* alert("voy!"); */
+   const countButtons=document.querySelectorAll("button").length;
+   
+   for(var i=0;i<countButtons;i++) {
+      document.querySelectorAll("button")[i].addEventListener("click",showValue);
+      
+   }
+function showValue(){
+   console.log(this.value);
+
+}
+
+
+</script>
+
 </body>
 
 </html>

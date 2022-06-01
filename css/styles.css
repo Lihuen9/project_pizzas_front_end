@@ -157,6 +157,21 @@ nav ul li a:hover {
    color: #1a5b5e;
 }
 
+.gallery li .button {
+   margin-top: 5px;
+   width: 100%;
+   padding: 7px;
+   border: none;
+   background: #548c1d;
+   border-radius: 1.25rem;
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: 600;
+   color: #fff;
+   font-family: 'Work Sans', sans-serif;
+
+}
+
 footer {
    display: flex;
    justify-content: center;
@@ -165,6 +180,8 @@ footer {
    font-family: 'Oswald', sans-serif;
    font-weight: bold;
 }
+
+
 
 @media (max-width: 960px) {
    #header-container {
