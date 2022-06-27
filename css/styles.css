@@ -208,6 +208,15 @@ footer #link {
    margin-bottom: 30 px;
 }
 
+input[type="text"] {
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+}
 
 
 @media (max-width: 960px) {
