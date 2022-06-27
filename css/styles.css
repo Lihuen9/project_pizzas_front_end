@@ -181,7 +181,10 @@ footer {
    font-weight: bold;
 }
 
-
+footer #link {
+   width:100%;
+   text-align: center;
+}
 
 @media (max-width: 960px) {
    #header-container {

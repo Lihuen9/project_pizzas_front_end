@@ -29,13 +29,13 @@
 
    <link rel="stylesheet" href="css/all.css" />
    <link rel="stylesheet" href="css/styles.css" />
-   
+
 </head>
 
 <body>
    <header>
       <div id="header-container">
-         
+
          <h1>
             <span class="black">Pizze </span>
             <span class="green">il </span>
@@ -70,8 +70,8 @@
                   </figcaption>
                </figure>
                <button class="button" value="1">
-                  Añadir al carrito 
-                     <span class="fa-solid fa-cart-shopping"></span>
+                  Añadir al carrito
+                  <span class="fa-solid fa-cart-shopping"></span>
 
                </button>
             </div>
@@ -180,26 +180,28 @@
    </div>
 
    <footer>
-     <h4>
-        Footer &copy;
-     </h4> 
+      <div id="link">
+         <a href="login.html">Acceso privado</a>
+         <p>&copy2022</p>
+         
+      </div>
    </footer>
 
-<script>
-   /* alert("voy!"); */
-   const countButtons=document.querySelectorAll("button").length;
-   
-   for(var i=0;i<countButtons;i++) {
-      document.querySelectorAll("button")[i].addEventListener("click",showValue);
-      
-   }
-function showValue(){
-   console.log(this.value);
+   <script>
+      /* alert("voy!"); */
+      const countButtons = document.querySelectorAll("button").length;
 
-}
+      for (var i = 0; i < countButtons; i++) {
+         document.querySelectorAll("button")[i].addEventListener("click", showValue);
+
+      }
+      function showValue() {
+         console.log(this.value);
+
+      }
 
 
-</script>
+   </script>
 
 </body>
 
