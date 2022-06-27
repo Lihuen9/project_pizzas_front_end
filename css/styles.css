@@ -218,6 +218,13 @@ input[type="password"] {
    border-top-right-radius: 0;
 }
 
+.container {
+  font-family: "Lato"; sans-serif;
+background: rgb(0,123,255);
+background: linear-gradient(0deg, rgba(0,123,255,1) 21%, rgba(0,239,255,1) 100%);
+}
+
+
 
 @media (max-width: 960px) {
    #header-container {
