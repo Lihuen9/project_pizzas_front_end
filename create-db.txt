@@ -1,12 +1,19 @@
+COMANDOS SQL TRABAJADOS EN CLASE CON PHPMYADMIN 
+***********************************************
+JULIO-2022
+
+
+
+BASE DE DATOS LOGIN
+-------------------
+
+
 create table users(
     id_user int(11) not null auto_increment primary key,
     username varchar(20) not null, 
     password char(64) not null,
     email varchar(80) not null
     )engine=innodb default charset=utf8mb4 collate utf8mb4_general_ci;
-
-
-
 
 
 select sha2("Maria",256);
@@ -61,7 +68,13 @@ select count(*) from users where username="maria" and password=sha2("123456",256
 select count(*) from users where username="maria" and password=sha2("123456",256) and active="si"; 
 select count(*) from users where (username="maria" or email="mariadb@gmail.com") and password=sha2("123456",256);
 
+----------------------------------
+----------------------------------
 
+CREAR BASE DE DATOS SPORT
+-------------------------
+
+create database sport;
 
 
 
