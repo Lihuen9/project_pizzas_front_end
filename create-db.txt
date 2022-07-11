@@ -42,10 +42,17 @@ SELECT username, email, created_at from users ORDER by username desc;
 
 SELECT upper(username), email, created_at from users ORDER by username desc;
 
+
+----------------
+UPPER
+
 SELECT upper(username), email, year(created_at) from users ORDER by username desc;
 SELECT upper(username), email, month(created_at) from users ORDER by username desc;
 SELECT upper(username), email, day(created_at) from users ORDER by username desc;
 
+
+---------------------
+DATEDIFF
 
 select datediff(now(), created_at) from users;
 select datediff(now(), created_at), username from users;
@@ -59,7 +66,8 @@ select replace (created_at,"-","/") from users;
 select min(created_at) from users;
 select max(created_at) from users;
 
-where 
+--------------
+WHERE
 select * from users where username="maria";
 select * from users where username="maria" or username="mario";
 select * from users where username in("maria","mario","pamela");
@@ -74,10 +82,21 @@ select count(*) from users where (username="maria" or email="mariadb@gmail.com")
 CREAR BASE DE DATOS SPORT
 -------------------------
 
-create database sport;
+
+BORRAR tabla: drop table [nombre-de-la-tabla]
 
 
+CREATE database sport;
 
+
+create table games(
+    id int auto_increment not null primary key,
+    player varchar(100) not null, 
+    score int not null
+    )engine=innodb default charset=utf8mb4 collate utf8mb4_general_ci;
+
+
+-------------------------
 
 
 
