@@ -97,6 +97,62 @@ create table games(
 
 
 -------------------------
+13/07
+
+
+select sum(score) from games;
+select sum(score) as "tabla de puntos" from games;
+
+select * from games;
+
+group by
+--------
+select sum(score) as "total de puntos", player from games group by player; 
+
+select sum(score) as "total de puntos", player from games group by player order by player;
+
+select sum(score) as "total de puntos", player from games group by player having player="Lucy";
+
+select sum(score) as "total de puntos", player from games group by player having player="John" or player="Tom" order by score;
+
+select sum(score) as "total de puntos", player from games group by player having player in("John", "Tom") order by score;
+
+select sum(score) as "total de puntos", player from games group by player having player like "%o%";
+
+"_o%"
+''
+
+-----
+Primero se modifica luego se busca
+
+update games set player='tomy' where player='tom';
+select * from games;
+
+update games set score=80 where id=3;
+select * from games;
+
+-----
+
+delete from games where id=8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
