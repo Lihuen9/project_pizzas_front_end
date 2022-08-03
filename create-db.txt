@@ -135,6 +135,23 @@ select * from games;
 
 delete from games where id=8;
 
+-----------
+
+2022-08-03
+
+select * FROM users
+ctrl+enter
+
+select username, email from users;
+
+
+
+https://diego.com.es/arrays-asociativos-en-php
+
+insert into users (username,password,email) values ("claudio",sha2("claudio",256), "claudio@gmail.com");
+
+---------------------------------
+
 
 
 
