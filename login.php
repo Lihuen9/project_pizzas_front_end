@@ -51,6 +51,7 @@ $stmt ->bindValue(':hashed_pass', $hashed_pass);
 $stmt ->execute();
 $row=$stmt ->fetch(PDO::FETCH_ASSOC);
 if ($row == 0)
+{
 ?>
 <div class="alert alert-danger">
     <a href="login.html" class="close" data-dismiss="alert"></a>
@@ -59,7 +60,9 @@ if ($row == 0)
     </div>
 </div>
 <?php
+
 echo "Login invalido";
+}
 else
 echo "Bienvenido";
 ?>
