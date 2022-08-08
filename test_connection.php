@@ -30,8 +30,6 @@ foreach($row as $col) { //recorre un array asociativo
     echo "<br>";
     echo "---------------";
     
-
-
 }
 
 
