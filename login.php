@@ -19,13 +19,18 @@
 
 
 <?php
+
+session_start();
 $usr=$_POST["username"];
 $pass=$_POST["password"];
+$hashed_pass = hash('sha256', $pass);
+
+
 
 // echo $usr;
 // echo $pass;
 
-$hashed_pass=hash("sha256",$pass);
+// $hashed_pass=hash("sha256",$pass);
 
 // echo $hashed_pass;
 
@@ -63,8 +68,17 @@ if ($row == 0)
 
 echo "Login invalido";
 }
-else
-echo "Bienvenido";
+else {
+    session_start();
+    date_default_timezone_set('America/Argentina/Buenos_Aires');
+    $_SESSION['time']=date('H:i:s');
+    $_SESSION['username']=$usr;
+    $_SESSION['logueado']=true;
+    
+    
+        header('location:welcome.php');
+    
+}
 ?>
 
 
