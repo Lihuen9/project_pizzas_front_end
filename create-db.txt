@@ -154,11 +154,13 @@ insert into users (username,password,email) values ("claudio",sha2("claudio",256
 2022-08-08
 
 select * from users where (username = "maria" or email = "mariadb@gmail.com") and  (password =  "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92") and (active = "si");
+---------------------------------
+---------------------------------
 
+Solución al error de MySql (Error: MySQL shutdown unexpectedly)
+https://www.youtube.com/watch?v=5cCT1ThLqqU
 
-
-
-
+---------------------------------
 
 
 
