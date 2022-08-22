@@ -37,14 +37,25 @@ $hashed_pass = hash('sha256', $pass);
 
 include_once "config_login.php";
 
+
+
+/* ya creada en db.php 
 function openCom() {
 $dsn = "mysql:dbname=".DATABASE_NAME.";host=".SERVER_NAME;
 $link = new PDO ($dsn, USER_NAME, PASSWORD);
 // echo "conexion exitosa";
 return $link;
 }
+*/
 
-$link = openCom();
+include_once "db.php";
+$link=new DB();
+
+
+
+
+
+// $link = openCom();
 
 // $sql = "select * from users where (username = 'maria' or email = 'mariadb@gmail.com') and  (password =  '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92') and (active = 'si')";
 
