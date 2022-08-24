@@ -162,6 +162,37 @@ https://www.youtube.com/watch?v=5cCT1ThLqqU
 
 ---------------------------------
 
+2022-08-24
+
+Nueva base de datos de la pizzeria.
+
+Create database commerce
+
+create table products (
+	id_product int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    product_name varchar(50) not null,
+    price decimal(7,2) not null,
+    start_date timestamp DEFAULT current_timestamp,
+    image varchar(255),
+    id_category int(11) not null
+    )
+ENGINE = Innodb DEFAULT charset=utf8mb4 collate utf8mb4_general_ci;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
