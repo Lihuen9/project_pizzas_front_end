@@ -178,6 +178,16 @@ create table products (
     )
 ENGINE = Innodb DEFAULT charset=utf8mb4 collate utf8mb4_general_ci;
 
+--
+
+create table categories (
+    id_category int(11) AUTO_INCREMENT PRIMARY KEY,
+    category_name varchar(50) not null
+    )
+    ENGINE = Innodb DEFAULT charset=utf8mb4 collate utf8mb4_general_ci;
+
+--
+
 
 
 
