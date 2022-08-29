@@ -188,8 +188,42 @@ create table categories (
 
 --
 
+2022-08-29
 
 
+ALTER TABLE products
+ADD CONSTRAINT products_categories FOREIGN KEY(id_category) REFERENCES categories (id_category);
+
+
+insert into categories (category_name) values ('pizzas');
+
+
+select * from categories;
+
+insert into categories (category_name) values ('hamburguesas');
+
+select count(*) from categories;
+
+insert into products
+(id_category, image,price,product_name) VALUES
+(1,'images/fugazzeta.jpg', 1400,'Especial Fugazzeta'),
+(1,'images/pizza-4-quesos.jpg',1900,'Especial 4 quesos'),
+(1,'images/pizza-de-albahaca.jpg',1700,'Especial Albahaca'),
+(1,'images/pizza-muzzarella.jpg',1500,'Especial Muzzarella'),
+(1,'images/pizza-napolitana.jpg',1900,'Especial Napolitana'),
+(1,'images/pizza-rucula-y-jamon.jpg',2500,'Especial Rucula y Jamón')
+
+
+select min(price) from products;
+
+update products set price=price+200 where id_products=2
+
+
+select products.product_name, products.price, products.start_date, products.image, categories.category_name FROM productcs inner join categories
+
+select p.product_name, p.price, p.start_date, p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category
+
+select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y'), p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category
 
 
 
