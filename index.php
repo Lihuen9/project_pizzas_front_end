@@ -59,10 +59,31 @@
             include_once("config_products.php");
             include_once("db.php");
             $link = new DB();
-            $sql = "select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y'), p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category";
+            $sql = "select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y')as date, description, p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category order by p.price ASC";
             $stmt = $link->prepare($sql);
             $stmt->execute();
-
+            $data=$stmt->fetchAll();
+            foreach($data as $row)
+            {
+             ?>
+             <li>
+                <div class="box">
+                <figure>
+                <img src="<?php echo $row['image']?>">
+                <figcaption>
+                <h3><?php echo $row['category_name']?> <?php echo $row['product_name']?></h3>
+                <h4><?php echo $row['description']?></h4>
+                <p>$<?php echo $row['price']?></p>
+                <time><?php echo $row['date']?></time>
+                </figcaption>
+                </figure>
+                <button class="button" value="5">
+                Añadir al carro <span class="fa-solid fa-cart-plus"></span>
+                </button>
+                </div>
+             </li>
+             <?php
+            }            
 
          ?>
       </ul>

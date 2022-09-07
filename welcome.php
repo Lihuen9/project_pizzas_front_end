@@ -24,6 +24,9 @@
 
 
 <?php
+
+
+
 session_start();
 if($_SESSION['logueado'])
 {
@@ -37,5 +40,7 @@ else {
     header('location:login.html');
 
 }
+
+
 
 ?>

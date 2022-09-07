@@ -225,18 +225,59 @@ select p.product_name, p.price, p.start_date, p.image, c.category_name FROM prod
 
 select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y'), p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category
 
+select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y'), p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category";
+
+------------------------------
+2022-09-07
+
+Trabajos sobre la base de datos.
+
+*Ordenar por precio en forma ascendente. Se prueba su funcionamiento en SQL.
+select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y') as date, p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category order by p.price ASC;
+
+*Se coloca en index.php en la línea:
+$sql = "select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y') as date, p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category order by p.price ASC"; 
+
+*Agregar nueva categoria en SQL.
+insert into categories (category_name) values ('picadas');
+
+*Agregar un producto en la DB.
+Insert into products (id_category, product_name, image, price) values (3, "Aros de cebolla","images/aros.jpg","800");
+
+*Agregar un campo llamado description en la tabla.
+Alter table products add column description varchar(100)
+
+*Agregar una descripción a un producto determinado. En mi caso id_product de aros de cebolla es igual a 7.
+update products set description="18 unidades, incluyen dip bbq" where id_product=7;
+
+*Se prueba su funcionamiento en SQL.
+select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y')as date, description, p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category order by p.price ASC
+
+*Se coloca en index.php en la línea (se agrega description del producto):
+$sql = "select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y')as date, description, p.image, c.category_name FROM products p inner join categories c on c.id_category=p.id_category order by p.price ASC";
+
+*Luego se agrega la visualización en index.php:
+<h4><?php echo $row['description']?></h4>
+
+*Agregar en el CSS las líneas:
+.gallery li h4 {
+   margin-bottom: 6px;
+   text-align: center;
+   font-size: 0.7rem;
+   line-height: 100%;
+   text-transform: uppercase;
+   color: #17181a;
+   letter-spacing: 2px;
+}
+
+
+*Trabajar en welcome.php
 
 
 
 
 
-
-
-
-
-
-
-
+------------------------------
 
 
 
