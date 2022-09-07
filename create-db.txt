@@ -272,6 +272,8 @@ $sql = "select p.product_name, p.price, date_format(p.start_date,'%d/%m/%y')as d
 
 
 *Trabajar en welcome.php
+(sin realizar)
+
 
 
 
