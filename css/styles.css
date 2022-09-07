@@ -138,6 +138,16 @@ nav ul li a:hover {
    letter-spacing: 2px;
 }
 
+.gallery li h4 {
+   margin-bottom: 6px;
+   text-align: center;
+   font-size: 0.7rem;
+   line-height: 100%;
+   text-transform: uppercase;
+   color: #17181a;
+   letter-spacing: 2px;
+}
+
 .gallery li p {
    text-align: center;
    font-size: 2rem;
