@@ -11,4 +11,21 @@ Proyecto de trabajo práctico y de estudio.
 > 2022-05-23 Trabajo en clase: flex, sup, del, font work sans, cleanup picture, 
  ![Mejoras en el proyecto de estudio.](/rd/pizze-v3.jpg "Vista con mejoras")
 
+# Proyecto de comidas rápidas
+
+Sistema de comercio electrónico (CRUD) parea venta de comida rápida (PHP/MySQL)
+
+---
+
+### Tecnologías 💻
+
+- HTML/CSS/JS
+- Bostrap 5
+- PHP (con PDO) 7/8
+- MariaDB 10
+
+
+
+
+
 
