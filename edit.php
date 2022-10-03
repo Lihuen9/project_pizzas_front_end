@@ -5,7 +5,7 @@ if ($_SESSION['logueado']) {
     include_once("config_products.php");
     include_once("db.php");
     $link = new Db();
-    $sql = "SELECT p.id_product, as p.product_name, p.price, c.category_name from products p inner join c on p.id_category=c.id_category where id_product= ".$idUpt;
+    $sql = "SELECT p.id_product as id_product, p.product_name, p.price, c.category_name from products p inner join categories c on p.id_category=c.id_category where id_product=".$idUpt;
     $stmt = $link->prepare($sql);
     $stmt->execute();
     $data = $stmt->fetch();

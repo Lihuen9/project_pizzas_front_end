@@ -34,7 +34,7 @@
 
 
     function updateProduct(cod) {
-      windows.location = "edit.php?q=" + cod;
+      window.location = "edit.php?q=" + cod;
     }
   </script>
 </head>
