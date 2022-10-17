@@ -11,7 +11,7 @@ include_once("db.php");
 $link=new Db();
 
 
-$sql="INSERT into category_name;
+$sql="INSERT into category_name";
 
 $stmt = $link->prepare($sql);
 

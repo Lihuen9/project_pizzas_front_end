@@ -26,7 +26,7 @@
         <h3 class="text-center"> Ingreso de categorias</h3>
       </div>
       <div class="col-md-12">
-        <form class="form-group" accept-charset="utf-8" action="save_products.php" method="post" enctype="multipart/form-data">
+        <form class="form-group" accept-charset="utf-8" action="save_category.php" method="post" enctype="multipart/form-data">
             
             
             <div class="form-group">
