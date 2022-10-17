@@ -5,11 +5,11 @@ if ($_SESSION['logueado']) {
     include_once("config_products.php");
     include_once("db.php");
     $link = new Db();
-    $sql = "SELECT p.id_product as id_product, p.product_name as product_name, c.id_category as id_category, p.price as price, c.category_name as category_name from products p inner join categories c on p.id_category=c.id_category where id_product=" . $idUpt;
+    $sql = "SELECT p.id_product as id_product, p.product_name as product_name, p.id_category as id_category, p.price as price, c.category_name as category_name from products p inner join categories c on p.id_category=c.id_category where id_product=" . $idUpt;
     $stmt = $link->prepare($sql);
     $stmt->execute();
     $data = $stmt->fetch();
-    echo $data['id_product'];
+    // echo $data['id_product'];
 }
 
 ?>
@@ -38,7 +38,9 @@ if ($_SESSION['logueado']) {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center">ACTUALIZAR PRODUCTO</h3>
+                
+            
+            <h3 class="text-center">ACTUALIZAR PRODUCTO</h3>
             </div>
 
             <div class="col-md-12">
@@ -48,7 +50,7 @@ if ($_SESSION['logueado']) {
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label">NOMBRE</label> <input id="nombre" name="nombre" class="form-control" type="text" value="<?php echo $data['id_product'] ?>">
+                        <label class="control-label">NOMBRE</label> <input id="nombre" name="nombre" class="form-control" type="text" value="<?php echo $data['product_name'] ?>">
                     </div>
 
                     <div class="form-group">
