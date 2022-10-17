@@ -9,7 +9,7 @@ if ($_SESSION['logueado']) {
     $stmt = $link->prepare($sql);
     $stmt->execute();
     $data = $stmt->fetch();
-    // echo $data['id_product'];
+    // echo $data['id_product']; muestra el id de la categoria en la parte superior de la página, a modo de referencia y prueba.
 }
 
 ?>

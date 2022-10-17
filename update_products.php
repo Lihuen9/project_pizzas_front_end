@@ -4,7 +4,7 @@ if ($_SESSION['logueado']) {
 include_once("config_products.php");
 include_once("db.php");
 $link = new Db();
-$id = $_POST['id'];
+// $id = $_POST['id'];
 $name = $_POST['nombre'];
 $price = $_POST['precio'];
 $category = $_POST['categoria'];
