@@ -69,7 +69,10 @@
 
      </div>
 
+     <?php
+echo "<a href= 'welcome.php' >REGRESAR</a>";
 
+?>
 
 
 

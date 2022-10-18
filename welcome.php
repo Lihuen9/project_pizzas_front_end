@@ -23,6 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/styles.css">
+
   <script>
     function deleteProduct(cod) {
       bootbox.confirm("Desea eliminar el producto" + cod, function(result) {
@@ -32,11 +33,11 @@
       });
     }
 
-
     function updateProduct(cod) {
       window.location = "edit.php?q=" + cod;
     }
   </script>
+
 </head>
 
 <body>
@@ -54,13 +55,14 @@
   <br>
   <br>
   <a href="insert_products.php" class="btn btn-primary">Ingresar Producto</a>
-  <br>
+  <br> <br>
+  <a href="insert_category.php" class="btn btn-primary">Ingresar Categorias</a>
   <?php
 
   include_once("config_products.php");
   include_once("db.php");
 
-  $link = new Db();/*Objeto*/
+  $link = new Db(); /*Objeto*/
   $sql = "SELECT p.id_product, p.product_name, p.price, date_format(p.start_date,'%d/%m/%Y') as date , c.category_name from products p inner join categories c on c.id_category=p.id_category order by c.category_name asc;";
   $stmt = $link->prepare($sql);
   $stmt->execute();
